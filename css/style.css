@@ -10,7 +10,7 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 body { background-color:#F8F8F8; margin: 0; font-size: 12px; line-height: 1.5; }
 body, button, input, select, textarea { font-family: 'Ubuntu Condensed', sans-serif; color: #666666; }
 ::-moz-selection { background: #66CC33; color: #fff; text-shadow: none; }
-::selection { background: #66CC33; color: #fff; text-shadow: none; }	
+::selection { background: #66CC33; color: #fff; text-shadow: none; }    
 /* LINKS */
 a { color: #66CC33; cursor: pointer; }
 a:hover { color: #66CC33; 
@@ -122,7 +122,7 @@ footer li:last-child { margin-right: 0; padding-right: 0; border-right: none; }
 .up .ir { display: block; background: url(../img/up.png) no-repeat center; width: 25px; height: 18px; text-align: center; margin: 0 auto; }
 /*---------*/
 .part ul{
-	margin-bottom: 10px;}
+    margin-bottom: 10px;}
 .about .content img { max-width: 100%; width: auto; height: auto; }
 .detail { margin-top: 40px; padding-top: 20px; border-top: 1px solid #DDD; }
 .servicess .detail:first-child { margin-top: 0 }
@@ -143,9 +143,9 @@ footer li:last-child { margin-right: 0; padding-right: 0; border-right: none; }
 /* Work SINGLE */
 .singlework figure {margin-bottom: 30px;}
 .singlework figure figcaption {
-	 	 text-align: center}
+         text-align: center}
 .singlework img {
-	 max-width: 100%; height: auto; width: auto; display: block; margin: 0 auto}
+     max-width: 100%; height: auto; width: auto; display: block; margin: 0 auto}
 
 /*toggle*/
 .toggle-view li { margin-bottom: 10px; position: relative; cursor: pointer; overflow: hidden; }
