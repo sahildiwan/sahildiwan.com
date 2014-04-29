@@ -156,18 +156,18 @@
                     </div>
                     <div class="row-fluid content slide">
                         <div class="span4">
-                            <img src="img/fitterfutures_screen.png" alt="Fitter Futures">
-                            <h6>- <a href="https://www.fitterfutures.org/">Fitter Futures</a>, Co-Founder</h6>
+                            <a href="https://www.fitterfutures.org/" rel="external"><img src="img/fitterfutures_screen.png" alt="Fitter Futures"></a>
+                            <h6>- <a href="https://www.fitterfutures.org/" rel="external">Fitter Futures</a>, Co-Founder</h6>
                         </div>
                         <!-- /span4 -->
                         <div class="span4">
-                            <img src="img/webdev_screen.png" alt="Web Dev Club">
-                            <h6>- <a href="http://www.cs.uoregon.edu/groups/webdev/">Web Dev Club</a>, Co-Founder</h6>
+                            <a href="http://www.cs.uoregon.edu/groups/webdev/" rel="external"><img src="img/webdev_screen.png" alt="Web Dev Club"></a>
+                            <h6>- <a href="http://www.cs.uoregon.edu/groups/webdev/" rel="external">Web Dev Club</a>, Co-Founder</h6>
                         </div>
                         <!-- /span4 -->
                         <div class="span4">
-                            <img src="img/esqave_screen.png" alt="Esquire Avenue">
-                            <h6>- <a href="https://www.esqave.com/">Esquire Avenue</a>, Co-Founder</h6>
+                            <a href="https://www.esqave.com/" rel="external"><img src="img/esqave_screen.png" alt="Esquire Avenue"></a>
+                            <h6>- <a href="https://www.esqave.com/" rel="external">Esquire Avenue</a>, Co-Founder</h6>
                         </div>
                         <!-- /span4 -->
                     </div>
@@ -175,17 +175,17 @@
                     <div class="row-fluid content slide">
                         <div class="span4">
                             <img src="img/hallspot_screen_2.png" alt="Hallspot">
-                            <h6>- <a href="http://hallspot.com/">Hallspot</a>, Chief Strategy Officer</h6>
+                            <h6>- Hallspot, Chief Strategy Officer (Past)</h6>
                         </div>
                         <!-- /span4 -->
                         <div class="span4">
                             <img src="img/karilla_screen.png" alt="Karilla">
-                            <h6>- <a href="http://www.karilla.com/">Karilla</a>, Co-Founder</h6>
+                            <h6>- Karilla, Co-Founder (Past)</h6>
                         </div>
                         <!-- /span4 -->
                         <div class="span4">
                             <img src="img/wodtime_screen.png" alt="WODTime">
-                            <h6>- <a href="http://wodtime.com/">WODTime</a>, Co-Founder</h6>
+                            <h6>- WODTime, Co-Founder (Past)</h6>
                         </div>
                         <!-- /span4 -->
                     </div>
