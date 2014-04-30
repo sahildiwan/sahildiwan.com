@@ -3,22 +3,22 @@
       $EmailFrom = "contact_form@sahildiwan.com";
       $EmailTo = "me@sahildiwan.com";
       $Subject = "SahilDiwan.com Contact Form Inquiry";
-      
+
       $Name = Trim(stripslashes($_POST['Name']));
       $Email = Trim(stripslashes($_POST['Email']));
       $Number = Trim(stripslashes($_POST['Number']));
       $Website = Trim(stripslashes($_POST['Website']));
       $Message = Trim(stripslashes($_POST['Message']));
-      
+
       $text = 'Your message has been sent! I will get back to you soon.';
-   
+
       // validation
       $validationOK = true;
       if (!$validationOK) {
          print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
          exit ;
       }
-   
+
       // prepare email body text
       $Body = "";
       $Body .= "Name: ";
@@ -35,7 +35,7 @@
       $Body .= "\n";
       $Body .= "Message: ";
       $Body .= $Message;
-   
+
       // send email
       $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
    }
