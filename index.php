@@ -156,10 +156,23 @@
                     </div>
                     <div class="row-fluid content slide">
                         <div class="span4">
+                            <a href="https://www.youtube.com/watch?v=7EvtEk563Rs" rel="external"><img src="img/tedx.png" alt="TEDxUOregon"></a>
+                            <h6>- <a href="https://www.youtube.com/watch?v=7EvtEk563Rs" rel="external">TEDxUOregon</a> Talk</h6>
+                        </div>
+                        <!-- /span4 -->
+                        <div class="span4">
+                            <a href="http://go-snappy.com/" rel="external"><img src="img/snappy_screen.png" alt="Snappy"></a>
+                            <h6>- <a href="http://go-snappy.com/" rel="external">Lunch Money</a>, Co-Founder</h6>
+                        </div>
+                        <!-- /span4 -->
+                        <div class="span4">
                             <a href="https://www.fitterfutures.org/" rel="external"><img src="img/fitterfutures_screen.png" alt="Fitter Futures"></a>
                             <h6>- <a href="https://www.fitterfutures.org/" rel="external">Fitter Futures</a>, Co-Founder</h6>
                         </div>
                         <!-- /span4 -->
+                    </div>
+                    <!-- /row-fluid -->
+                    <div class="row-fluid content slide">
                         <div class="span4">
                             <a href="http://www.cs.uoregon.edu/groups/webdev/" rel="external"><img src="img/webdev_screen.png" alt="Web Dev Club"></a>
                             <h6>- <a href="http://www.cs.uoregon.edu/groups/webdev/" rel="external">Web Dev Club</a>, Co-Founder</h6>
@@ -170,22 +183,9 @@
                             <h6>- <a href="https://www.esqave.com/" rel="external">Esquire Avenue</a>, Co-Founder</h6>
                         </div>
                         <!-- /span4 -->
-                    </div>
-                    <!-- /row-fluid -->
-                    <div class="row-fluid content slide">
-                        <div class="span4">
-                            <img src="img/hallspot_screen_2.png" alt="Hallspot">
-                            <h6>- Hallspot, Chief Strategy Officer (Past)</h6>
-                        </div>
-                        <!-- /span4 -->
                         <div class="span4">
                             <img src="img/karilla_screen.png" alt="Karilla">
                             <h6>- Karilla, Co-Founder (Past)</h6>
-                        </div>
-                        <!-- /span4 -->
-                        <div class="span4">
-                            <img src="img/wodtime_screen.png" alt="WODTime">
-                            <h6>- WODTime, Co-Founder (Past)</h6>
                         </div>
                         <!-- /span4 -->
                     </div>
@@ -324,7 +324,7 @@
                         <div id="footer">
                             <div class="row-fluid">
                                 <div class="span12">
-                                    © Lunch Money, Inc. 2014
+                                    © Lunch Money 2014
                                 </div>
                                 <!-- /span12 -->
                             </div>
