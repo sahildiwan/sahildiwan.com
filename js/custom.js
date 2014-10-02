@@ -312,8 +312,8 @@ $(document).ready(function() {
 
     function mapInitialize() {
 
-        var yourLatitude = 47.6097;
-        var yourLongitude = -122.3331;
+        var yourLatitude = 34.0500;
+        var yourLongitude = -118.2500;
 
         var myOptions = {
             zoom: 14,
