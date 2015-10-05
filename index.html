@@ -55,7 +55,7 @@
 		<ul class="menu nav me-nav">
 			<li class="menu-item"><a id="about" href="#resume"><span>About</span><i class="fa fa-pencil"></i></a></li>
 			<li class="menu-item"><a id="works" href="#portfolio"><span>Works</span><i class="fa fa-desktop"></i></a></li>
-			<li class="menu-item"><a id="contact" href="#contact"><span>Contact</span><i class="fa fa-phone"></i></a></li>
+			<li class="menu-item"><a id="contact_li" href="#contact"><span>Contact</span><i class="fa fa-phone"></i></a></li>
 		</ul>
 
 		<span class="copyright hidden-md">© 2015 <b>Sahil Diwan</b>.</span>
@@ -250,8 +250,8 @@
 
 						<div class="end-of-section">
 							<div class="post-carousel-control">
-								<a id="previous" class="post-carousel-prev" href="#">Previous</a>
-								<a id="next" class="post-carousel-next" href="#">Next</a>
+								<a class="post-carousel-prev" href="#">Previous</a>
+								<a class="post-carousel-next" href="#">Next</a>
 							</div>
 						</div>
 					</div>
@@ -308,7 +308,7 @@
 
 		mixpanel.track_links("#about", "Clicked About Nav Link");
 		mixpanel.track_links("#works", "Clicked Works Nav Link");
-		mixpanel.track_links("#contact", "Clicked Contact Nav Link");
+		mixpanel.track_links("#contact_li", "Clicked Contact Nav Link");
 		mixpanel.track_links("#facebook", "Clicked Facebook Link");
 		mixpanel.track_links("#twitter", "Clicked Twitter Link");
 		mixpanel.track_links("#linkedin", "Clicked Linkedin Link");
@@ -320,8 +320,6 @@
 		mixpanel.track_links("#fitter_futures", "Clicked Fitter Futures Link");
 		mixpanel.track_links("#esqave", "Clicked Esqave Link");
 		mixpanel.track_links("#couchbed", "Clicked Couchbed Link");
-		mixpanel.track_links("#previous", "Clicked Previous Project Link");
-		mixpanel.track_links("#next", "Clicked Next Project Link");
 		mixpanel.track_links("#email", "Clicked E-mail Link");
 		mixpanel.track_links("#blog", "Clicked Blog Link");
 		mixpanel.track_links("#facebook_b", "Clicked FacebookB Link");
