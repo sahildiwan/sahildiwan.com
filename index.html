@@ -8,15 +8,19 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Sahil Diwan - Designer, Developer, and Tech Entrepreneur">
-	<meta name="keywords" content="technology, sahil diwan, entrepreneur, developer, 
-		designer, programmer, student, University of Oregon, snappy, fourth wall">
-	<meta name="author" content="Sahil Diwan">
 
 	<link rel="shortcut icon" href="images/favicon.ico">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+	<!-- start Mixpanel -->
+	<script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+		mixpanel.init("3600f581228f62805ecf3a7e570a7900");
+	</script>
+	<!-- end Mixpanel -->
 
 	<script>
 		if ((window.devicePixelRatio === undefined ? 1 : window.devicePixelRatio) > 1)
@@ -49,14 +53,9 @@
 		</div>
 
 		<ul class="menu nav me-nav">
-			<li class="menu-item active"><a href="#profile"><span>Home</span><i class="fa fa-user"></i></a>
-			</li>
-			<li class="menu-item"><a href="#resume"><span>About</span><i class="fa fa-pencil"></i></a>
-			</li>
-			<li class="menu-item"><a href="#portfolio"><span>Works</span><i class="fa fa-desktop"></i></a>
-			</li>
-			<li class="menu-item"><a href="#contact"><span>Contact</span><i class="fa fa-phone"></i></a>
-			</li>
+			<li class="menu-item"><a id="about" href="#resume"><span>About</span><i class="fa fa-pencil"></i></a></li>
+			<li class="menu-item"><a id="works" href="#portfolio"><span>Works</span><i class="fa fa-desktop"></i></a></li>
+			<li class="menu-item"><a id="contact" href="#contact"><span>Contact</span><i class="fa fa-phone"></i></a></li>
 		</ul>
 
 		<span class="copyright hidden-md">© 2015 <b>Sahil Diwan</b>.</span>
@@ -69,46 +68,38 @@
 			<div class="content padded dark">
 		
 				<div class="top-bar">
-			
 					<div class="pull-left">
 						<ul class="social-icons si-pull-up">
-							<li><a href="https://www.facebook.com/Sahil.Diwan.1" target="_blank"><i class="fa fa-facebook"></i></a>
+							<li>
+								<a id="facebook" href="https://www.facebook.com/Sahil.Diwan.1" target="_blank"><i class="fa fa-facebook"></i></a>
 							</li>
-							<li><a href="https://twitter.com/sahil_diwan" target="_blank"><i class="fa fa-twitter"></i></a>
+							<li>
+								<a id="twitter" href="https://twitter.com/sahil_diwan" target="_blank"><i class="fa fa-twitter"></i></a>
 							</li>
-							<li><a href="https://www.linkedin.com/in/sahildiwan" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<li>
+								<a id="linkedin" href="https://www.linkedin.com/in/sahildiwan" target="_blank"><i class="fa fa-linkedin"></i></a>
 							</li>
-							<li><a href="https://github.com/sahildiwan/" target="_blank"><i class="fa fa-github"></i></a>
+							<li>
+								<a id="github" href="https://github.com/sahildiwan/" target="_blank"><i class="fa fa-github"></i></a>
 							</li>
 						</ul>
-					</div>
-					<div class="pull-right">
-						<a href="#profile" class="hidden-xs">www.sahildiwan.com</a>
 					</div>
 				</div>
 		
 				<div class="profile-content">
 					<h1 class="short">Sahil Diwan</h1>
 					<h5>Designer, Developer, and Tech Entrepreneur</h5>
-					<a href="#contact" class="btn btn-default pull-right">contact info</a>
+					<a id="contact_info" href="#contact" class="btn btn-default pull-right">contact info</a>
 				</div>
 		
-				<div class="bottom-bar profile-bottom-bar hidden-xs">
-			
-					<ul class="list-inline">
-						<li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="mailto:me@sahildiwan.com">me@sahildiwan.com</a>
-						</li>
-					</ul>
-				</div>
+				<div class="bottom-bar profile-bottom-bar hidden-xs"></div>
 			</div>
 		</section>
-
 
 		<section id="resume">
 			<div class="content padded-short">
 				<div class="row">
 					<div class="col-lg-6">
-				
 						<div class="resume-box">
 							<i class="title-icon text-primary flaticon-speech43"></i>
 							<h3>About</h3>
@@ -118,7 +109,6 @@
 					</div>
 
 					<div class="col-lg-6">
-				
 						<div class="resume-box">
 							<i class="title-icon text-primary flaticon-codings1"></i>
 							<h3>Specialties</h3> 
@@ -149,7 +139,6 @@
 			</div>
 		</section>
 
-
 		<section id="portfolio">
 			<div class="content padded">
 				<div class="row">
@@ -165,9 +154,9 @@
 											<span class="post-date">Fourth Wall | Co-Founder</span>
 										</div>
 										<div class="post-text">
-											<p class="lead">Actors that audiences want to see</p>
+											<p class="lead">We help the industry understand their audience</p>
 											<p>Selected as one of five top college startups of 2014 by Entrepreneur Magazine</p>
-											<a href="http://www.getfourthwall.com/" target="_blank" class="btn btn-primary btn-sm">learn more</a>
+											<a id="fourth_wall" href="https://www.fourth-wall.co/" target="_blank" class="btn btn-primary btn-sm">learn more</a>
 										</div>
 									</div>
 								</div>
@@ -183,8 +172,8 @@
 										</div>
 										<div class="post-text">
 											<p class="lead">Intellectual diversity is key to creativity</p>
-											<p>TEDx talk given in April, 2014 at the University of Oregon</p>
-											<a href="https://www.youtube.com/watch?v=7EvtEk563Rs" target="_blank" class="btn btn-primary btn-sm">watch it</a>
+											<p>TEDx talk given in April 2014 at the University of Oregon</p>
+											<a id="ted" href="https://www.youtube.com/watch?v=7EvtEk563Rs" target="_blank" class="btn btn-primary btn-sm">watch it</a>
 										</div>
 									</div>
 								</div>
@@ -201,7 +190,7 @@
 										<div class="post-text">
 											<p class="lead">Building apps for the X and Y generations</p>
 											<p>Top app was Snappy - the best Mac client for Snapchat</p>
-											<a href="http://www.go-snappy.com/" target="_blank" class="btn btn-primary btn-sm">download</a>
+											<a id="lunch_money" href="http://www.go-snappy.com/" target="_blank" class="btn btn-primary btn-sm">download</a>
 										</div>
 									</div>
 								</div>
@@ -217,8 +206,8 @@
 										</div>
 										<div class="post-text">
 											<p class="lead">Leading the children of our nation to brighter, Fitter Futures</p>
-											<p>With collected donations we offer fitness memberships to disadvantaged youth</p>
-											<a href="https://www.fitterfutures.org/" target="_blank" class="btn btn-primary btn-sm">donate</a>
+											<p>We offer fitness memberships to disadvantaged youth</p>
+											<a id="fitter_futures" href="https://www.fitterfutures.org/" target="_blank" class="btn btn-primary btn-sm">donate</a>
 										</div>
 									</div>
 								</div>
@@ -235,7 +224,7 @@
 										<div class="post-text">
 											<p class="lead">Platform designed for on-line legal advice</p>
 											<p>An easy-to-use and straightforward approach to legal review</p>
-											<a href="http://esqave.dimensionlawdomains.com/" target="_blank" class="btn btn-primary btn-sm">learn more</a>
+											<a id="esqave" href="http://www.esqave.com/" target="_blank" class="btn btn-primary btn-sm">learn more</a>
 										</div>
 									</div>
 								</div>
@@ -252,7 +241,7 @@
 										<div class="post-text">
 											<p class="lead">Custom website development for brands and businesses</p>
 											<p>Newest web technologies and frameworks to empower our clients</p>
-											<a href="http://couchbed.co/" target="_blank" class="btn btn-primary btn-sm">learn more</a>
+											<a id="couchbed" href="http://couchbed.co/" target="_blank" class="btn btn-primary btn-sm">learn more</a>
 										</div>
 									</div>
 								</div>
@@ -260,13 +249,9 @@
 						</div>
 
 						<div class="end-of-section">
-							<div class="pull-left">
-								<a href="http://blog.sahildiwan.com/" class="btn btn-black btn-sm" target="_blank">check out my blog</a>
-							</div>
-
 							<div class="post-carousel-control">
-								<a class="post-carousel-prev" href="#">Previous</a>
-								<a class="post-carousel-next" href="#">Next</a>
+								<a id="previous" class="post-carousel-prev" href="#">Previous</a>
+								<a id="next" class="post-carousel-next" href="#">Next</a>
 							</div>
 						</div>
 					</div>
@@ -284,26 +269,31 @@
 				<h2>Contact Info</h2>
 		
 				<ul class="list-unstyled list-unstyled-icons">
-					<li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="mailto:me@sahildiwan.com">me@sahildiwan.com</a>
+					<li>
+						<i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a id="email" href="mailto:me@sahildiwan.com">me@sahildiwan.com</a>
 					</li>
 				</ul>
 				<br/>
 				<br/>
-				<p><a href="http://blog.sahildiwan.com/" class="btn btn-primary" target="_blank">check out my blog</a>
+				<p>
+					<a id="blog" href="http://blog.sahildiwan.com/" class="btn btn-primary" target="_blank">check out my blog</a>
 				</p>
 		
 				<div class="bottom-bar contact-bottom-bar">
 					<div class="row">
 						<div class="col-md-12 col-lg-6">
-					
 							<ul class="social-icons medium">
-								<li><a href="https://www.facebook.com/Sahil.Diwan.1" target="_blank"><i class="fa fa-facebook"></i></a>
+								<li>
+									<a id="facebook_b" href="https://www.facebook.com/Sahil.Diwan.1" target="_blank"><i class="fa fa-facebook"></i></a>
 								</li>
-								<li><a href="https://twitter.com/sahil_diwan" target="_blank"><i class="fa fa-twitter"></i></a>
+								<li>
+									<a id="twitter_b" href="https://twitter.com/sahil_diwan" target="_blank"><i class="fa fa-twitter"></i></a>
 								</li>
-								<li><a href="https://www.linkedin.com/in/sahildiwan" target="_blank"><i class="fa fa-linkedin"></i></a>
+								<li>
+									<a id="linkedin_b" href="https://www.linkedin.com/in/sahildiwan" target="_blank"><i class="fa fa-linkedin"></i></a>
 								</li>
-								<li><a href="https://github.com/sahildiwan/" target="_blank"><i class="fa fa-github"></i></a>
+								<li>
+									<a id="github_b" href="https://github.com/sahildiwan/" target="_blank"><i class="fa fa-github"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -312,6 +302,33 @@
 			</div>
 		</section>
 	</div>
+
+	<script type="text/javascript">
+		mixpanel.track("Viewed Home Page");
+
+		mixpanel.track_links("#about", "Clicked About Nav Link");
+		mixpanel.track_links("#works", "Clicked Works Nav Link");
+		mixpanel.track_links("#contact", "Clicked Contact Nav Link");
+		mixpanel.track_links("#facebook", "Clicked Facebook Link");
+		mixpanel.track_links("#twitter", "Clicked Twitter Link");
+		mixpanel.track_links("#linkedin", "Clicked Linkedin Link");
+		mixpanel.track_links("#github", "Clicked Github Link");
+		mixpanel.track_links("#contact_info", "Clicked Contact Info Link");
+		mixpanel.track_links("#fourth_wall", "Clicked Fourth Wall Link");
+		mixpanel.track_links("#ted", "Clicked TEDx Link");
+		mixpanel.track_links("#lunch_money", "Clicked Lunch Money Link");
+		mixpanel.track_links("#fitter_futures", "Clicked Fitter Futures Link");
+		mixpanel.track_links("#esqave", "Clicked Esqave Link");
+		mixpanel.track_links("#couchbed", "Clicked Couchbed Link");
+		mixpanel.track_links("#previous", "Clicked Previous Project Link");
+		mixpanel.track_links("#next", "Clicked Next Project Link");
+		mixpanel.track_links("#email", "Clicked E-mail Link");
+		mixpanel.track_links("#blog", "Clicked Blog Link");
+		mixpanel.track_links("#facebook_b", "Clicked FacebookB Link");
+		mixpanel.track_links("#twitter_b", "Clicked TwitterB Link");
+		mixpanel.track_links("#linkedin_b", "Clicked LinkedinB Link");
+		mixpanel.track_links("#github_b", "Clicked GithubB Link");
+	</script>
 
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
