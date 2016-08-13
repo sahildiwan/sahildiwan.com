@@ -37,15 +37,15 @@ strong {
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    -webkit-backface-visibility: hidden;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	-webkit-backface-visibility: hidden;
 }
 
 object, video {
-    display: block;
-    height: auto;
+	display: block;
+	height: auto;
 }
 
 textarea:focus, input:focus, a:focus, a:visited, *:focus {
