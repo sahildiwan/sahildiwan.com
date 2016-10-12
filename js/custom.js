@@ -1,10 +1,8 @@
 $(document).ready(function() {
-
 	"use strict";
 
 	/* Setting Sizes 
 	-----------------------------------------------------*/
-
 	function setSizes() {
 
 		/* General */
@@ -40,7 +38,6 @@ $(document).ready(function() {
 
 	/* Navigation
 	-----------------------------------------------------*/
-
 	$('#page-content section').waypoint(function(direction) {
 		if (direction == 'down') {
 
@@ -77,10 +74,8 @@ $(document).ready(function() {
 		}
 	});
 
-
 	/* Resume
 	-----------------------------------------------------*/
-
 	$('.dimmed-effect .resume-box').mouseenter(function() {
 		$('.dimmed-effect .resume-box').not(this).each(function() {
 			$(this).addClass('disable');
@@ -95,11 +90,8 @@ $(document).ready(function() {
 
 	/* Blog 
 	-----------------------------------------------------*/
-
 	// Post Carousel
-
 	$(".post-carousel").owlCarousel({
-
 		// Most important owl features
 		items: false,
 		itemsCustom: [
@@ -120,7 +112,6 @@ $(document).ready(function() {
 		scrollPerPage: true,
 		pagination: true,
 		theme: "carousel-theme"
-
 	});
 
 	var owl = $(".owl-carousel").data('owlCarousel');
@@ -129,16 +120,13 @@ $(document).ready(function() {
 		owl.next();
 		return false;
 	});
-
 	$('.post-carousel-prev').click(function() {
 		owl.prev();
 		return false;
 	});
 
 	// Post Carousel
-
 	$(".blog-slider").owlCarousel({
-
 		// Most important owl features
 		items: false,
 		itemsCustom: false,
@@ -156,14 +144,11 @@ $(document).ready(function() {
 		pagination: true,
 		autoPlay: true,
 		theme: "slider-theme"
-
 	});
 
 	/* Portfolio 
 	-----------------------------------------------------*/
-
 	// Ajax Project Details
-
 	var toLoad;
 
 	function showNewContent() {
@@ -190,12 +175,10 @@ $(document).ready(function() {
 
 	/* Smooth Scrolling
 	-----------------------------------------------------*/
-
 	$.localScroll({});
 
 	/* Contact
 	-----------------------------------------------------*/
-
 	$('#contact-form-holder').addClass('form-hidden');
 	$('.contact-form-trigger').click(function() {
 		if ($('#contact-form-holder').hasClass('form-hidden')) {
@@ -210,7 +193,6 @@ $(document).ready(function() {
 
 	/* Animations
 	-----------------------------------------------------*/
-
 	jQuery('.animated').appear();
 
 	$('.fade-in').appear(function() {
@@ -281,14 +263,12 @@ $(document).ready(function() {
 
 	/* Alpha Setting
 	-----------------------------------------------------*/
-
 	$('.editable-alpha').css({
 		'opacity': ($('.editable-alpha').attr('data-alpha') / 100)
 	});
 
 	/* Check photos 
 	-----------------------------------------------------*/
-
 	function checkPhotos() {
 		if ($('#profile-bg img, .page-title-bg img, .blog-slide-photo img').height() < $('#profile-bg img, .page-title-bg img, .blog-slide-photo img').parent().height()) {
 			$('#profile-bg img, .page-title-bg img, .blog-slide-photo img').removeClass('too-slim');
@@ -309,11 +289,10 @@ $(document).ready(function() {
 
 	/* Google Map
 	-----------------------------------------------------*/
-
 	function mapInitialize() {
 
-		var yourLatitude = 34.0500;
-		var yourLongitude = -118.2500;
+		var yourLatitude = 47.6062; //34.0500;
+		var yourLongitude = -122.3321; //-118.2500;
 
 		var myOptions = {
 			zoom: 14,
@@ -324,6 +303,7 @@ $(document).ready(function() {
 			zoomControl: false,
 			scaleControl: false,
 			streetViewControl: false,
+			draggable: false,
 			styles: [{
 				"stylers": [{
 					"hue": "#ff1a00"
